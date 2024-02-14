@@ -1,15 +1,6 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
-
 # Widget Configuration (Website/Power App) 
 
 Get the widget URL
-
-``` html
-https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html
-```
-<button class="btn" data-clipboard-target="#canvas-app-code">Copy code</button>
-
-
 |  Environment        | URL       |
 | ------------- |:-------------:| 
 |  Demo     | https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html |
@@ -26,10 +17,10 @@ https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html
       - You can also add height and width to the iframe as shown below:
         
       ```html
-      <iframe src="https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html?dynamicsUrl=https://msdynccaasdemo.crm.dynamics.com/" height="700" width="500" > 
+      <iframe src="https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html?dynamicsUrl=https://msdynccaasdemo.crm.dynamics.com/" height="700" width="500"></iframe>
       ```
-      <button class="btn" data-clipboard-target="#canvas-app-code">Copy code</button>
-  
+      <button onclick="copyToClipboard('#canvas-app-code')">Copy code</button>
+
 4) Import your solution under the Solutions tab. 
 
 5) Import the newly created Custom Code Component into your Canvas App. 
@@ -41,7 +32,7 @@ https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html
 
 ## CCaaS Embedded Widget inside a Website (mimicking CRM) 
 
-1) ** Pre-Condition:** CCaaS team will need to Whitelist the Website domain. 
+1) **Pre-Condition:** CCaaS team will need to Whitelist the Website domain. 
    - For us the domain was https://ccaas-widget-integration-demo.azurewebsites.net/
    - Once the PR is merged, run the release pipeline.
 
@@ -49,17 +40,32 @@ https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html
    - You can also add height and width to the iframe as shown below:
      
    ```html
-    <iframe src="https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html?dynamicsUrl=https://msdynccaasdemo.crm.dynamics.com/" height="700" width="500" > 
+   <iframe src="https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html?dynamicsUrl=https://msdynccaasdemo.crm.dynamics.com/" height="700" width="500"></iframe>
    ```
-   <button class="btn" data-clipboard-target="#canvas-app-code">Copy code</button>
+   <button onclick="copyToClipboard('#website-code')">Copy code</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <script>
-var clipboard = new ClipboardJS('.btn');
-clipboard.on('success', function(e) {
+function copyToClipboard(selector) {
+    var copyText = document.querySelector(selector);
+    var textArea = document.createElement('textarea');
+    textArea.textContent = copyText.textContent;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textArea);
     alert('Code copied to clipboard!');
-});
+}
 </script>
-
-
-
-
