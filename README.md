@@ -34,6 +34,9 @@ https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html?dynamicsUrl=https:
 
 8) Publish the app.
    
+   <img width="588" alt="image" src="https://github.com/awesome-sigma-team/CCaaS-Embed-Widget/assets/122857590/33dd01f6-9b02-4c98-bd34-fc92595305de">
+
+   
    <img width="458" alt="image" src="https://github.com/awesome-sigma-team/demo-website0integration/assets/122857590/32ae4a77-a26d-44d0-92b7-ec828cc54e98">
 
 
