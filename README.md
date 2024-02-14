@@ -28,11 +28,15 @@ https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html?dynamicsUrl=https:
       ```
       <button onclick="copyToClipboard('#canvas-app-code')"></button>
 
-4) Import your solution under the Solutions tab. 
+4) Import your solution under the Solutions tab.
+   <img width="570" alt="image" src="https://github.com/awesome-sigma-team/demo-website0integration/assets/122857590/4935e13a-dce0-47e9-b2d3-6798e60e2a0e">
 
-5) Import the newly created Custom Code Component into your Canvas App. 
 
-6) Publish the app.
+6) Import the newly created Custom Code Component into your Canvas App.
+  <img width="570" alt="image" src="https://github.com/awesome-sigma-team/demo-website0integration/assets/122857590/0dd0e8f5-ed4e-4766-82da-d47a289d4a4c">
+
+
+8) Publish the app.
    
    <img width="458" alt="image" src="https://github.com/awesome-sigma-team/demo-website0integration/assets/122857590/32ae4a77-a26d-44d0-92b7-ec828cc54e98">
 
