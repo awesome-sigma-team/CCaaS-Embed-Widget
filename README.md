@@ -2,15 +2,16 @@
 
 # Widget Configuration (Website/Power App) 
 
-``` html
-https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html ```
+Get the widget URL
 
+``` html
+https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html```
 <button class="btn" data-clipboard-target="#canvas-app-code">Copy code</button>
 
-Get the widget URL
+
 |  Environment        | URL       |
 | ------------- |:-------------:| 
-|  Demo     | ```https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html``` |
+|  Demo     | https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html |
 
 ## CCaaS Embedded Widget inside a Canvas App: 
 
