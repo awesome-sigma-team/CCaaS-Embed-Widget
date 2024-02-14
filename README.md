@@ -22,7 +22,10 @@ Get the widget URL
 
 5) Import the newly created Custom Code Component into your Canvas App. 
 
-6) Publish the app. 
+6) Publish the app.
+   
+   <img width="458" alt="image" src="https://github.com/awesome-sigma-team/demo-website0integration/assets/122857590/32ae4a77-a26d-44d0-92b7-ec828cc54e98">
+
 
 ## CCaaS Embedded Widget inside a Website (mimicking CRM) 
 
