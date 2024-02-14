@@ -6,7 +6,7 @@ Get the widget URL
 https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html?dynamicsUrl=https://msdynccaasdemo.crm.dynamics.com/
 
 ```
-<button onclick="copyToClipboard('#canvas-app-code')">Copy code</button>
+<button onclick="copyToClipboard('#canvas-app-code')"></button>
 
 |  Environment        | URL       |
 | ------------- |:-------------:| 
