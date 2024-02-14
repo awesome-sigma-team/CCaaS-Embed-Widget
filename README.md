@@ -8,10 +8,6 @@ https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html?dynamicsUrl=https:
 ```
 <button onclick="copyToClipboard('#canvas-app-code')"></button>
 
-|  Environment        | URL       |
-| ------------- |:-------------:| 
-|  Demo     | https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html |
-
 ## CCaaS Embedded Widget inside a Canvas App: 
 
 1) **Pre-Condition:** **Same Dynamics Org needs to be used to access the Canvas App and the Widget.**  
