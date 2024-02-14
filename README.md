@@ -1,3 +1,5 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+
 # Widget Configuration (Website/Power App) 
 
 Get the widget URL
@@ -16,7 +18,10 @@ Get the widget URL
    - Add an iframe element with an attribute “src = Widget URL”.
       - You can also add height and width to the iframe as shown below:
         
-      `<iframe src="https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html?dynamicsUrl=https://msdynccaasdemo.crm.dynamics.com/" height="700" width="500" >`
+      ```html
+      <iframe src="https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html?dynamicsUrl=https://msdynccaasdemo.crm.dynamics.com/" height="700" width="500" > 
+      ```
+      <button class="btn" data-clipboard-target="#canvas-app-code">Copy code</button>
   
 4) Import your solution under the Solutions tab. 
 
@@ -36,9 +41,17 @@ Get the widget URL
 2) In your website, add an iframe element with an attribute “src = Widget URL”.
    - You can also add height and width to the iframe as shown below:
      
-   `<iframe src="https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html?dynamicsUrl=https://msdynccaasdemo.crm.dynamics.com/" height="700" width="500" >`
+   ```html
+    <iframe src="https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html?dynamicsUrl=https://msdynccaasdemo.crm.dynamics.com/" height="700" width="500" > 
+   ```
+   <button class="btn" data-clipboard-target="#canvas-app-code">Copy code</button>
 
-
+<script>
+var clipboard = new ClipboardJS('.btn');
+clipboard.on('success', function(e) {
+    alert('Code copied to clipboard!');
+});
+</script>
 
 
 
