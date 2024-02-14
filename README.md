@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Widget Configuration (Website/Power App) 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Get the widget URL
+|  Environment        | URL       |
+| ------------- |:-------------:| 
+|  Demo     | https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html |
 
-## Available Scripts
+## CCaaS Embedded Widget inside a Canvas App: 
 
-In the project directory, you can run:
+1) **Pre-Condition:** **Same Dynamics Org needs to be used to access the Canvas App and the Widget.**  
+   - Different orgs will conflict with the login feature of Widget.
+   - If we use one org for canvas app and other for Widget login, then login.microsoft.com is not working and Widget is not loading in the canvas app.
+  
+3) Create Custom Code Component using PCF (Power Apps component framework) Framework. 
+   - Use template as React.  
+   - Add an iframe element with an attribute “src = Widget URL”.
+      - You can also add height and width to the iframe as shown below:
+        
+      `<iframe src="https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html?dynamicsUrl=https://msdynccaasdemo.crm.dynamics.com/" height="700" width="500" >`
+  
+4) Import your solution under the Solutions tab. 
 
-### `npm start`
+5) Import the newly created Custom Code Component into your Canvas App. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+6) Publish the app. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## CCaaS Embedded Widget inside a Website (mimicking CRM) 
 
-### `npm test`
+1) ** Pre-Condition:** CCaaS team will need to Whitelist the Website domain. 
+   - For us the domain was https://ccaas-widget-integration-demo.azurewebsites.net/
+   - Once the PR is merged, run the release pipeline.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2) In your website, add an iframe element with an attribute “src = Widget URL”.
+   - You can also add height and width to the iframe as shown below:
+     
+   `<iframe src="https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html?dynamicsUrl=https://msdynccaasdemo.crm.dynamics.com/" height="700" width="500" >`
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
