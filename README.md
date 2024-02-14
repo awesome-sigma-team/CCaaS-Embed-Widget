@@ -5,7 +5,8 @@
 Get the widget URL
 
 ``` html
-https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html```
+https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html
+```
 <button class="btn" data-clipboard-target="#canvas-app-code">Copy code</button>
 
 
