@@ -26,7 +26,7 @@ https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html?dynamicsUrl=https:
       ```html
       <iframe src="https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html?dynamicsUrl=https://msdynccaasdemo.crm.dynamics.com/" height="700" width="500"></iframe>
       ```
-      <button onclick="copyToClipboard('#canvas-app-code')">Copy code</button>
+      <button onclick="copyToClipboard('#canvas-app-code')"></button>
 
 4) Import your solution under the Solutions tab. 
 
@@ -49,7 +49,7 @@ https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html?dynamicsUrl=https:
    ```html
    <iframe src="https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html?dynamicsUrl=https://msdynccaasdemo.crm.dynamics.com/" height="700" width="500"></iframe>
    ```
-   <button onclick="copyToClipboard('#website-code')">Copy code</button>
+   <button onclick="copyToClipboard('#website-code')"></button>
 
 
 
