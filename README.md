@@ -3,7 +3,7 @@
 Get the widget URL
 
 ```html
-https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html?dynamicsUrl=https://msdynccaasdemo.crm.dynamics.com/
+https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html?dynamicsUrl=https://msdynccaasdemo.crm.dynamics.com/&&ctiDriverUrl=https://ccaas-widget-integration-demo.azurewebsites.net/js/openCTI.js
 
 ```
 <button onclick="copyToClipboard('#canvas-app-code')"></button>
@@ -20,7 +20,7 @@ https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html?dynamicsUrl=https:
       - You can also add height and width to the iframe as shown below:
         
       ```html
-      <iframe src="https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html?dynamicsUrl=https://msdynccaasdemo.crm.dynamics.com/" height="700" width="500"></iframe>
+      <iframe src="https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html?dynamicsUrl=https://msdynccaasdemo.crm.dynamics.com/&&ctiDriverUrl=https://ccaas-widget-integration-demo.azurewebsites.net/js/openCTI.js" height="700" width="500"></iframe>
       ```
       <button onclick="copyToClipboard('#canvas-app-code')"></button>
 
@@ -51,7 +51,7 @@ https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html?dynamicsUrl=https:
    - You can also add height and width to the iframe as shown below:
      
    ```html
-   <iframe src="https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html?dynamicsUrl=https://msdynccaasdemo.crm.dynamics.com/" height="700" width="500"></iframe>
+   <iframe src="https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html?dynamicsUrl=https://msdynccaasdemo.crm.dynamics.com/&&ctiDriverUrl=https://ccaas-widget-integration-demo.azurewebsites.net/js/openCTI.js" height="700" width="500"></iframe>
    ```
    <button onclick="copyToClipboard('#website-code')"></button>
 
