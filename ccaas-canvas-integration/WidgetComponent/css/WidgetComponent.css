@@ -1,0 +1,112 @@
+.App {
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  header {
+    line-height: 1.5;
+    background-color: #fff;
+    background-image: url(https://ccaas-widget-integration-demo.azurewebsites.net/images/background.png);
+    background-repeat: repeat-x;
+  }
+  
+  .greyBox {
+    display: flex;
+    flex-direction: column;
+    width: 950px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #e5e5e5;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  .span-5 {
+    width: 190px;
+  }
+  
+  .promobox {
+    padding: 0 18px 18px 18px;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .span-24 {
+    width: 950px;
+    margin-right: 0;
+  }
+  
+  .append-bottom {
+    margin-bottom: 1.5em;
+  }
+  
+  .last {
+    margin-right: 0;
+  }
+  
+  .greenbox {
+    background-image: url(https://ccaas-widget-integration-demo.azurewebsites.net/images/background_greenheader.png);
+    background-repeat: repeat-x;
+    -moz-box-shadow: inset 1px 1px 6px #666;
+    -webkit-box-shadow: inset 1px 1px 6px #666;
+    box-shadow: inset 1px 1px 6px #666;
+  }
+  
+  #inqC2CImgContainer {
+    z-index: 10;
+  }
+  
+  input[type="image"] :hover {
+    color: #99cc00 ;
+  }
+  
+  
+  button {
+    width: 130px;
+    height: 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }

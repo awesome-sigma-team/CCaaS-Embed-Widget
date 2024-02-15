@@ -6,6 +6,6 @@ export const IFrameComponent = ({setSoftPhonePanelVisibility, softPhonePanelVisi
       style={{visibility: softPhonePanelVisibilty? 'visible': 'hidden', resize: 'horizontal'}} 
       src={`https://ccaas-embed-test.azureedge.net/ccaaswidget/index.html?dynamicsUrl=https://msdynccaasdemo.crm.dynamics.com/&&ctiDriverUrl=https://ccaas-widget-integration-demo.azurewebsites.net/js/openCTI.js`} 
       height="700" 
-      width="500"></iframe>
+      width="595px"></iframe>
       <button onClick={() => setSoftPhonePanelVisibility(!softPhonePanelVisibilty)}>Live Chat</button>
     </div>)
